@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>Web influence</title>
+</head>
+<style>
+
+.a{
+background:linear-gradient(to right,cyan,white);
+}
+.b{
+ background: linear-gradient(to right,white,cyan,orange,maroon,red);
+ border-radius:100px;
+}
+ .c{
+ color: black;
+  border-radius:14px;
+ padding: 10px;
+  background: linear-gradient(to right,white,cyan);
+  margin: 0 auto;
+  width: 300;
+ animation: bounce 2s infinite;
+ }
+@keyframes bounce {
+  0%, 100%{
+    transform: translateY(0);
+  }
+}
+  50% {
+    transform: translateY(-20px);
+  }
+}
+  .d{
+ background: linear-gradient(to right,white,cyan);
+ border-radius:14px;
+ animation: bounce 2s infinite;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.e{
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    margin-right: 0;
+  }
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+ 
+</style>
+<body class="a">
+ <h1 style="font-family:algerian; font-size:15; color:red">
+  <form>
+   <table width="80%"; align="center">
+    <tr>
+     <th><img src="logo.jpg" width="30" height="40"></th>
+     <th>MUSIC BOX</th>
+     <th><img src="logo.jpg" width="30" height="40"></th><th><button id="menu-button"
+style="background: none; border: none; color:                           
+    <span style="font-size: 20px;">☰</span>
+  </button></th>
+    </tr>
+   </table>
+  </form>
+  </h1>
+ <form action="/submit-signup" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <label for="confirm-password">Confirm Password:</label>
+  <input type="password" id="confirm-password" name="confirm-password" required>
+
+  <button type="submit">Sign Up</button>
+</form>
+ <audio id="myAudio" controls>
+  <source src="Popcaan_Silence_Official_Video.mp3" type="audio/mp3">;
+  <source src="Popcaan_Silence_Official_Video.mp3" type="audio/mp3">
+
+</audio>
+ <audio id="myAudio" controls>
+  <source src="Popcaan_Silence_Official_Video.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  const audio = document.getElementById('myAudio');
+
+  // Play audio
+  audio.play();
+
+  // Pause audio
+  audio.pause();
+
+  // Event listener for play event
+  audio.addEventListener('play', () => {
+    console.log('Audio playing');
+  });
+
+  // Event listener for pause event
+  audio.addEventListener('pause', () => {
+    console.log('Audio paused');
+  });
+</script>
+ 
+
+ <button>
+  <a href="page2.html" class="c">signup/log_in</a>"
+ </button>
+ <nav class="e">
+  <ul class="e">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- Add more pages as needed -->
+  </ul>
+</nav>
+ <div style="display: flex; align-items: center; justify-content: flex-end; background-color:                       
+  <span style="color: #fff; margin-right: 20px;">Sign in</span>
+  <img src="pic1.jpg" alt="Cart" style="width: 20px; height: 20px;">
+  <button id="menu-button"
+style="background: none; border: none; color:                           
+    <span style="font-size: 20px;">☰</span>
+  </button>
+</div>
+<button id="menu-button">Menu</button>
+<nav id="menu">
+  <ul>
+    <li><a href="                       
+    <li><a href="#">Menu Item 2</a></li>
+    <li><a href="#">Menu Item 3</a></li>
+  </ul>
+</nav>
+<button id="menu-button">
+  <span>&#9776;</span>
+</button>
+
+  
+  
+</body>
+</html>
